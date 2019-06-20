@@ -8,42 +8,42 @@ public class PokemonTrainer {
 
     // The constructor
     public PokemonTrainer(String name, ArrayList<Pokemon> team) {
-        this.name = name;
-        this.team = team;
+	this.name = name;
+	this.team = team;
     }
 
     @Override
     public String toString() {
-        return "Trainer: " + name + ", Wins: "
-                + win + ", team:[\n" + teamToString(team) +
-                "]\n";
+	return "Trainer: " + name + ", Wins: "
+		+ win + ", team:[\n" + teamToString(team) +
+		"]\n";
     }
 
     public String teamToString(ArrayList<Pokemon> arrayList){
-        String pokeList = "";
-        for(int i=0; i<arrayList.size(); i++){
-            pokeList += arrayList.get(i).toString() + ((i == arrayList.size()-1)?"":",\n");
-        }
-        return pokeList;
+	String pokeList = "";
+	for(int i=0; i<arrayList.size(); i++){
+	    pokeList += arrayList.get(i).toString() + ((i == arrayList.size()-1)?"":",\n");
+	}
+	return pokeList;
     }
 
     public String getName() {
-        return name;
+	return name;
     }
 
     public int getWin() {
-        return win;
+	return win;
     }
 
     public void setWin(int win) {
-        this.win = win;
+	this.win = win;
     }
 
     public ArrayList<Pokemon> getTeam() {
-        return team;
+	return team;
     }
 
     public void setTeam(ArrayList<Pokemon> team) {
-        this.team = team;
+	this.team = team;
     }
 }

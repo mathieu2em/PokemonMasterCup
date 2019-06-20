@@ -7,45 +7,45 @@ public class SkillMove {
 
     // The constructor
     public SkillMove(String type, String name, double dmg, double missRate) {
-        this.type = type;
-        this.name = name;
-        this.dmg = dmg;
-        this.missRate = missRate;
+	this.type = type;
+	this.name = name;
+	this.dmg = dmg;
+	this.missRate = missRate;
     }
 
     public String toString(){
-        return name + " (" + type + ")";
+	return name + " (" + type + ")";
     }
 
     public String getName() {
-        return name;
+	return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+	this.name = name;
     }
 
     public String getType() {
-        return type;
+	return type;
     }
 
     public void setType(String type) {
-        this.type = type;
+	this.type = type;
     }
 
     public double getDmg() {
-        return dmg;
+	return dmg;
     }
 
     public void setDmg(double dmg) {
-        this.dmg = dmg;
+	this.dmg = dmg;
     }
 
     public double getMissRate() {
-        return missRate;
+	return missRate;
     }
 
     public void setMissRate(double missRate) {
-        this.missRate = missRate;
+	this.missRate = missRate;
     }
 }
